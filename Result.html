@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-slate-900 grid place-content-center h-screen">
+    <nav class="w-full h-14 flex justify-between px-4 md:4
+    items-center fixed mt-0 bg-gradient-to-r from-cyan-500 to-blue-500 ... border-b-sky-400 border-b-2 md:border-b-4">
+    <div class="flex">
+       <div class="mt-4"> <img class="h-12  " src="logo1.png" alt="">
+       </div><div class="text-2xl my-5 text-indigo-700 font-bold">Skills Test</div>
+     </div>
+     <ul class="md:flex hidden text-violet-100 font-bold text-2xl">
+        <li onclick="openhome()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">Home</li>
+        <li  onclick="openalltest()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">All Test</li>
+        <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openupcoming()" >admin</li>
+        <li onclick="openresults()" class="mx-[10px] cursor-pointer hover:text-pink-600 text-pink-600 active:text-yellow-500">Results</li>
+        <li onclick="openbuytest()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">Buy test</li>
+    </ul>
+    <div class="flex items-center">
+       <div class="hidden md:block px-2 py-2 h-10 mr-5 bg-indigo-700 
+    text-white rounded font-bold cursor-pointer hover:bg-yellow-500 active:text-yellow-500" onclick="login()" >Login/Signup</div>
+      
+  
+    </div>
+    <div class="md:hidden group ">
+        <a class=" text-yellow-500 text-5xl" >&#8801;</a>
+        <ul class=" group-hover:block hidden absolute rounded-md right-1 w-1/3 bg-sky-400 text-violet-100 font-bold text-xl">
+           <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openhome()">Home</li><hr>
+           <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openalltest()">All Test</li><hr>
+           <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openupcoming()">Upcoming</li><hr>
+           <li class="mx-[10px] cursor-pointer hover:text-pink-600 text-pink-600 active:text-yellow-500" onclick="openresults()">Results</li><hr>
+           <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openbuytest()">buy test</li><hr>
+         
+       </ul>
+    </div>
+
+</nav>
+
+    <!--result section here-->
+     <div class=" w-96 bg-yellow-500 items-center rounded-md border-2 pb-8 md:px-16">
+       <P class="text-2xl font-semibold text-cyan-500 text-center">YOUR RESULTS</P><hr class="mb-5">
+        
+        <div class="relative border-2 rounded-md flex mb-2 mx-5">
+            <p class="ml-3">NAME :-</p><P class="ml-3">SAHIL KUMAR</P>
+            </div>
+            <div class="relative border-2 rounded-md flex mb-2 mx-5">
+                <p class="ml-3">NAME OF EXAM:-</p><P class="ml-3">IIT-JEE</P>
+                </div>
+                <div class="relative border-2 rounded-md flex mb-2 mx-5">
+                    <p class="ml-3">PAPER TYPE:-</p><P class="ml-3">INCLUDING ALL</P>
+                    </div>
+                <div class="relative border-2 rounded-md flex mb-2 mx-5">
+                    <p class="ml-3">TOTAL MARKS:-</p><P class="ml-3">400</P>
+                    </div>
+                    <div class="relative border-2 rounded-md flex mb-2 mx-5">
+                        <p class="ml-3">OBTAINT MARKS:-</p><P class="ml-3">350</P>
+                        </div>
+                        <div class="relative border-2 rounded-md flex mb-2 mx-5">
+                            <p class="ml-3">RANK:-</p><P class="ml-3">35</P>
+                            </div>
+                        <div class="relative border-2 rounded-md flex mb-2 mx-5">
+                            <p class="ml-3">TIME TAKEN:-</p><P class="ml-3">02:50:34</P>
+                            </div>
+                            <div class="relative mx-5 grid ">
+                                <button class="bg-pink-600 text-xl font-semibold text-white hover:bg-cyan-500 mx-8 rounded-b-lg h-10" onclick="viewanswer()">
+                                    VIEW ANSWER
+                                     </button>
+                                </div>  
+                                 
+     </div>
+     <button class="bg-cyan-600 text-xl font-semibold text-white hover:bg-pink-500 mx-8 rounded-b-lg h-10" onclick="saveresult()">SAVE RESULT</button>
+    <!--result section ends here-->
+    
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body class="bg-slate-900 overflow-x-hidden">
+    <nav class="w-full z-10 h-14 flex justify-between px-4 md:4
+    items-center fixed mt-0 bg-gradient-to-r from-cyan-500 to-blue-500 ... border-b-sky-400 border-b-2 md:border-b-4">
+    <div class="flex">
+       <div class="mt-4"> <img class="h-12  " src="logo1.png" alt="">
+       </div><div class="text-2xl my-5 text-indigo-700 font-bold">Skills Test</div>
+     </div>
+    
+    <div class="flex text-yellow-600 text-xl">
+        <button id="stopwatch" class="bg-yellow-600 rounded-md text-xl mx-1 md:mx-2 px-1 text-white" 
+        onclick="startStopwatch()">start</button>
+
+   
+    
+</div>
+        </nav>
+
+        <!--Question section start here-->
+<div class=" text-white  md:flex justify-between absolute mt-20">
+  <div class="border-2 border-white relative md:w-7/12 mx-2 mb-10  p-2">
+  <div class=" md:mx-2  md:p-2">
+    <div class="font-bold text-center mb-2 flex ">
+    <div class=" bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ... rounded-full w-8/12">1.</div>
+    <div class="w-1/4 hover:bg-pink-500 cursor-pointer justify-evenly bg-yellow-600 rounded-md mx-5 ">English</div>
+  </div>
+    <p class="text-gray-400 md:w-full">
+      एक समय की बात है, एक छोटे से गाँव में एक गरीब लड़का रहता था जिसका नाम राजू था। वह अपने माता-पिता के साथ रहता था और उनका सपना था कि वह एक दिन बड़ा आदमी बनेगा।
+
+      राजू का प्रिय समय उसके गाँव की सारी बच्चों के साथ खेतों में खेलना था। एक दिन, एक बुद्धिमान वृद्ध व्यक्ति गाँव में आया और एक बड़े सभागार में एक सुनहरे पत्थर को रखकर चला गया।
+      
+      राजू ने वहां जाकर पूछा, "यह सुनहरा पत्थर क्या है?" वृद्ध व्यक्ति मुस्कराएं और बताएं, "यह एक आशीर्वाद है। इसका उपयोग तुम जैसे विशेष बच्चों के लिए है।"
+      
+      उसने राजू को उस सुनहरे पत्थर को उठाने के लिए कहा और कहा, "तुम इसे जितना दूर ले जा सकते हो, ले जाओ। जितना बड़ा आशीर्वाद होगा, तुम्हारा उतना ही अच्छा भविष्य होगा।"
+      
+      राजू ने उस सुनहरे पत्थर को उठाने का निर्णय किया और वह बहुत दूर तक ले जाने के लिए निकला। रास्ते में उसने कई परीक्षणों का सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था।</p><hr>
+      <img class="hidden" src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_320,h_265,al_br,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png">
+            <div>
+              <div class="mt-5 ml-2">
+                <input type="radio" id="huey" name="drone" value="huey"/>
+                <label for="huey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+              </div>
+            
+              <div class="mt-5 ml-2">
+                <input type="radio" id="dewey" name="drone" value="dewey" />
+                <label for="dewey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+              </div>
+            
+              <div class="mt-5 ml-2">
+                <input type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+              </div>
+              <div class="mt-5 ml-2">
+                <input type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+              </div>
+              
+            </div><hr class="my-7">
+            <div class="mt-7 flex justify-around"><button class="bg-yellow-700 px-4 hover:bg-cyan-400 md:px-6 rounded-lg"> previus</button>
+              <button class="md:px-6 rounded-lg bg-pink-500 px-4 hover:bg-cyan-400"> conferm</button>
+              <button class="bg-yellow-700 px-4 md:px-6 rounded-lg hover:bg-cyan-400">next</button>
+            </div>
+          </div>
+            </div>
+            <div class="mx-2 md:h-max md:fixed md:right-0 bg-slate-800 border-white border-2 p-2 md:w-4/12 md:mt-0 mt-8">
+              <div class=" bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ... rounded-full mb-5 text-center">Question</div>
+              <div class="flex flex-wrap justify-start  md:justify-between form-control ">
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">1.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">2.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">3.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">4.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">5.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">6.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">7.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">8.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">9.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">10.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">11.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">12.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">13.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">14.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">15.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">16.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">17.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">18.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">19.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">20.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">21.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">22.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">23.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">24.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">25.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">26.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">27.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">28.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">29.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">30.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">31.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">32.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">33.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">34.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">35.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">36.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">37.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">38.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">39.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">40.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">41.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">42.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">43.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">44.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">45.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">46.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">47.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">48.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">49.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">50.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">51.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">52.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">53.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">54.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">55.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">56.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">57.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">58.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">59.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">60.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">61.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">62.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">63.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">64.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">65.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">66.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">67.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">68.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">69.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">70.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">71.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">72.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">73.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">74.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">75.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">76.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">77.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">78.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">79.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">80.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">81.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">82.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">83.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">84.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">85.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">86.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">87.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">88.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">89.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">90.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">91.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">92.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">93.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">94.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">95.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">96.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">97.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">98.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">99.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">100.</div> <span class="hidden">
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">51.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">52.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">53.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">54.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">55.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">56.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">57.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">58.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">59.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">60.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">61.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">62.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">63.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">64.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">65.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">66.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">67.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">68.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">69.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">70.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">71.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">72.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">73.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">74.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">75.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">76.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">77.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">78.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">79.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">80.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">81.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">82.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">83.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">84.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">85.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">86.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">87.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">88.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">89.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">90.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">91.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">92.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">93.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">94.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">95.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">96.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">97.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">98.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">99.</div>
+                <div class="bg-lime-200 rounded-md border-2 mb-2 text-gray-900 text-2xl w-10 text-center cursor-pointer hover:bg-green-500">100.</div> </span>
+                
+                </div>
+                <hr>
+                <div class="mt-4 flex justify-around">
+                  <button class="md:px-6 rounded-lg bg-pink-500 px-4 hover:bg-cyan-400 text-2xl font-bold" onclick="submit()">Submit</button>
+                </div>
+              
+              </div>
+          
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+ let timer;
+  let seconds = 3 * 60 * 60; // 3 hours in seconds
+
+  function startStopwatch() {
+    if (!timer) {
+      timer = setInterval(updateStopwatch, 1000);
+    }
+  }
+
+ 
+  function updateStopwatch() {
+    if (seconds > 0) {
+      seconds--;
+      const hours = Math.floor(seconds / 3600);
+      const minutes = Math.floor((seconds % 3600) / 60);
+      const remainingSeconds = seconds % 60;
+
+      const formattedTime = `${formatTime(hours)}:${formatTime(minutes)}:${formatTime(remainingSeconds)}`;
+      document.getElementById('stopwatch').textContent = formattedTime;
+    } else {
+      // Stop the stopwatch when it reaches 0
+      startStopwatch();
+    }
+  }
+
+  function formatTime(time) {
+    return time < 10 ? `0${time}` : time;
+  }
+</script>
+</html>

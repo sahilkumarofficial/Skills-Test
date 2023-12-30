@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+    <title>test-series</title>
+</head>
+<body class="bg-slate-900 overflow-x-hidden">
+     <!--navbar goes here-->
+     <nav class="w-full h-14 flex justify-between px-4 md:4
+     items-center fixed mt-0 bg-gradient-to-r from-cyan-500 to-blue-500 ... border-b-sky-400 border-b-2 md:border-b-4">
+     <div class="flex">
+        <div class="mt-4"> <img class="h-12  " src="logo1.png" alt="">
+        </div><div class="text-2xl my-5 text-indigo-700 font-bold">Skills Test</div>
+      </div>
+         <ul class="md:flex hidden text-violet-100 font-bold text-2xl">
+             <li onclick="openhome()" class="mx-[10px] cursor-pointer text-pink-600 active:text-yellow-500">Home</li>
+             <li  onclick="openalltest()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">All Test</li>
+             <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openupcoming()" >admin</li>
+             <li onclick="openresults()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">Results</li>
+             <li onclick="openbuytest()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">Buy test</li>
+         </ul>
+         <div class="flex items-center">
+            <div class="hidden md:block px-2 py-2 h-10 mr-5 bg-indigo-700 
+         text-white rounded font-bold cursor-pointer hover:bg-yellow-500 active:text-yellow-500" onclick="login()" >Login/Signup</div>
+           
+       
+         </div>
+         <div class="md:hidden group ">
+             <a class=" text-yellow-500 text-5xl" >&#8801;</a>
+             <ul class=" group-hover:block hidden absolute rounded-md right-1 w-1/3 bg-sky-400 text-violet-100 font-bold text-xl">
+                <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openhome()">Home</li><hr>
+                <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openalltest()">All Test</li><hr>
+                <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openupcoming()">Upcoming</li><hr>
+                <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openresults()">Results</li><hr>
+                <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openbuytest()">buy test</li><hr>
+              
+            </ul>
+         </div>
+
+     </nav>
+     <!--navbar ends here-->
+     <!--image sectrion start here-->
+     <header class="w-full h-auto">
+        <img class="w-full  hidden md:block" src="https://archiveprogram.github.com/assets/img/direction/ascii-pattern.svg">
+        <img class="w-full  h-96 md:hidden" src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_320,h_265,al_br,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png">
+
+    </header>
+    <!--image sectrion ends here-->
+    <!--out students sectios-->
+    <div class="h-auto w-100 flex flex-wrap flex-col items-centerp-10 text-center
+     p-10 ">
+        <div class="w-full h-auto flex flex-wrap flex-col items-center p-10">
+            <p class="text-indigo-800 font-bold text-3xl md:text-5xl">Our Course for your's results</p>
+            <div class="w-36 h1 border-b-4 border-yellow-400 mt-2 rounded-2xl
+            md:mt4 mb-12"></div>
+        </div>
+        <div class="h-14 w-auto md:w-96 md:text-3xl md:py-2 font-semibold  rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ...
+        text-2xl text-center py-3 mb-5 text-indigo-600">IIT-JEE Mock Test Series</div>
+<!--snaps center-->
+
+        <!-- iit course3333333333333333333-->
+        <div class="w-[100%] flex flex-wrap justify-between snap-center ... mx-4">
+            
+            <div class="w-72   flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+                <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">All subject</p>
+                    <img class="h-12" src="iit_logo.png" alt=""></div>
+          <p class="text-3xl font-bold text-white">Include all topics</p>
+           <p class="text-xl font-bold text-gray-500">IIt-JEE is known for its challenging and in-depth questions that 
+            require a high level of understanding and conceptual clarity.</p>
+           <button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold " onclick="start()">start test</button>
+       </div>
+
+       <div class="w-72   flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+        <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">Maths</p>
+            <img class="h-12" src="iit_logo.png" alt=""></div>
+  <p class="text-3xl font-bold text-white">Include all topics</p>
+   <p class="text-xl font-bold text-gray-500">This tests the candidates' ability to
+     connect different ideas and apply them collectively.</p>
+   <button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold " onclick="start()">start test</button>
+</div>
+
+<div class="w-72 flex   flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">Physics</p>
+        <img class="h-12" src="iit_logo.png" alt=""></div>
+<p class="text-3xl font-bold text-white">Include all topics</p>
+<p class="text-xl font-bold text-gray-500">time is crucial in the Physics. questions may be time-consuming, 
+    so you need to allocate their time wisely across different problems.</p>
+<button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold " onclick="start()">start test</button>
+</div>
+
+<div class="w-72  flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">Chemistry</p>
+        <img class="h-12" src="iit_logo.png" alt=""></div>
+<p class="text-3xl font-bold text-white">Include all topics</p>
+<p class="text-xl font-bold text-gray-500">Chemistry questions in IIT-JEE assess candidates' understanding of
+     fundamental concepts in Physical, Inorganic, and Organic Chemistry.</p>
+<button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold " onclick="start()" onclick="start()">start test</button>
+</div>
+             
+    </div>
+    <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... h-1 mb-12 bg-white md:position-block mx-6"></div>
+        <!--  iit course3333333333333333-->
+        <div class="h-14 w-auto md:w-96 md:text-3xl md:py-2 font-semibold  rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ...
+        text-2xl text-center py-3 mb-5 text-indigo-600">Neet Mock Test Series</div>
+<!--neet starts here-->
+
+        <!-- iit course3333333333333333333-->
+        <div class="w-[100%] flex flex-wrap justify-between snap-center ... mx-4">
+            
+            <div class="w-72   flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+                <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">All subject</p>
+                    <img class="h-12" src="neet.png" alt=""></div>
+          <p class="text-3xl font-bold text-white">PCB all topics</p>
+           <p class="text-xl font-bold text-gray-500">Maintain a positive attitude throughout your preparation.
+             Surround yourself with positive influences and supportive peers.</p>
+           <button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold " onclick="start()">start test</button>
+       </div>
+
+       <div class="w-72   flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+        <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">Biology</p>
+            <img class="h-12" src="neet.png" alt=""></div>
+  <p class="text-3xl font-bold text-white">All chapter wise questions sets</p>
+   <p class="text-xl font-bold text-gray-500">NEET Biology often includes questions that require a visual understanding of biological concepts.</p>
+   <button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold " onclick="start()">start test</button>
+</div>
+
+<div class="w-72 flex   flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">Physics</p>
+        <img class="h-12" src="neet.png" alt=""></div>
+<p class="text-3xl font-bold text-white">All chapter wise questions sets</p>
+<p class="text-xl font-bold text-gray-500">The Physics section covers topics such as Mechanics, Thermodynamics, Optics, Modern Physics, and more.</p>
+<button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold " onclick="start()">start test</button>
+</div>
+
+<div class="w-72  flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">Chemistry</p>
+        <img class="h-12" src="neet.png" alt=""></div>
+<p class="text-3xl font-bold text-white">All chapter wise questions sets</p>
+<p class="text-xl font-bold text-gray-500">This includes understanding the principles, theories, and laws associated with Physical, 
+    Inorganic, and Organic Chemistry.</p>
+<button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold " onclick="start()">start test</button>
+</div>
+             
+    </div>
+    <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... h-1 mb-12 bg-white md:position-block mx-6"></div>
+        <!--  iit course3333333333333333-->
+        <div class="h-14 w-auto md:w-96 md:text-3xl md:py-2 font-semibold  rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ...
+        text-2xl text-center py-3 mb-5 text-indigo-600">SSC Test Series</div>
+<!--snaps center-->
+
+        <!-- SSC course3333333333333333333-->
+        <div class="w-[100%] flex flex-wrap justify-between snap-center ... mx-4">
+            
+            <div class="w-72   flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+                <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">SSC-CGL</p>
+                    <img class="h-12" src="ssc-logo.png" alt=""></div>
+          <p class="text-3xl font-bold text-white">Maths<BR>
+            Resoning<BR>
+            English<BR>
+            General awareness</p>
+          
+           <button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold " onclick="start()">start test</button>
+       </div>
+
+       <div class="w-72   flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+        <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">SSC-CHSL</p>
+            <img class="h-12" src="ssc-logo.png" alt=""></div>
+  <p class="text-3xl font-bold text-white">Maths<BR>
+    Resoning<BR>
+    English<BR>
+    General awareness</p>
+   
+   <button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold ">start test</button>
+</div>
+
+<div class="w-72 flex   flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">SSC-MTS</p>
+        <img class="h-12" src="ssc-logo.png" alt=""></div>
+<p class="text-3xl font-bold text-white">Maths<BR>
+    Resoning<BR>
+    English<BR>
+    General awareness</p>
+
+<button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold ">start test</button>
+</div>
+
+<div class="w-72  flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">SSC-JE</p>
+        <img class="h-12" src="ssc-logo.png" alt=""></div>
+<p class="text-3xl font-bold text-white">Resoning<BR>
+    General awareness<BR>
+    Technical trade</p>
+    
+    
+<button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold ">start test</button>
+</div>
+             
+    </div>
+
+   
+
+        <!-- iit course3333333333333333333-->
+        <div class="w-[100%] flex flex-wrap justify-between snap-center ... mx-4">
+            
+            <div class="w-72   flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+                <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">SSC-GD</p>
+                    <img class="h-12" src="ssc-logo.png" alt=""></div>
+          <p class="text-3xl font-bold text-white">Maths<BR>
+            Resoning<BR>
+            English<BR>
+            General awareness</p>
+           
+           <button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold ">start test</button>
+       </div>
+
+       <div class="w-72   flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+        <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">SSC-CPO</p>
+            <img class="h-12" src="ssc-logo.png" alt=""></div>
+  <p class="text-3xl font-bold text-white">Maths<BR>
+    Resoning<BR>
+    English<BR>
+    General awareness</p>
+   <button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold ">start test</button>
+</div>
+
+<div class="w-72 flex   flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+    <div class="flex text-white text-2xl font-bold items-center w-auto m-7"><p class="p-2">BIHAR-SSC</p>
+        <img class="h-12" src="ssc-logo.png" alt=""></div>
+<p class="text-3xl font-bold text-white">Maths<BR>
+    Resoning<BR>
+    English<BR>
+    General awareness</p>
+
+<button class="w-60 h-10 my-5 rounded-full hover:bg-indigo-500 bg-yellow-500 text-2xl font-bold ">start test</button>
+</div>
+
+
+             
+    </div>
+        <!--  iit course3333333333333333-->
+        </div>
+      
+        <div class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... h-1 mb-12 bg-white md:position-block mx-6"></div>
+       
+        <!--  iit course3333333333333333-->
+
+        <!--serveral benifits-->
+        <div class="w-full h-auto flex flex-wrap flex-col items-center p-10">
+            <p class="text-white font-bold text-3xl md:text-5xl">Mock tests offer several benefits</p>
+            <div class="w-36 h1 border-b-4 border-yellow-400 mt-2 rounded-2xl
+            md:mt4 mb-12"></div>
+        </div>
+       <div class=" w-[95%] mx-6 overflow-hidden mb-8">
+        <dl class="text-gray-500">
+            <dt class="text-white font-bold text-2xl md:text-2xl">1. Assessment of Knowledge:</dt>
+            <dd class="md:w-1/2 md:mx-80">Mock tests help assess your understanding of the subject matter.
+                 By simulating exam conditions, you can gauge how well
+                 you've grasped the material and identify
+                  areas that need improvement.</dd>
+<dt class="text-white font-bold text-2xl md:text-2xl">2. Familiarization with Exam Format: </dt>
+            <dd class="md:w-1/2 md:mx-80">" Taking mock tests familiarizes you with the format
+                 and structure of the actual exam. This includes understanding 
+                 the types of questions, time constraints, and the overall pattern,
+                 which can reduce anxiety and boost confidence on the exam day.</dd>
+
+            
+                  <dt class="text-white font-bold text-2xl md:text-2xl">3. Time Management Skills: </dt>
+            <dd class="md:w-1/2 md:mx-80">Mock tests provide an opportunity to practice time management. 
+                They help you allocate the right amount of time to 
+                each section or question,ensuring that you can complet 
+                 the entire exam within the given timeframe.</dd>
+
+           
+                  <dt class="text-white font-bold text-2xl md:text-2xl">4. Identification of Weaknesses: </dt>
+            <dd class="md:w-1/2 md:mx-80">Analyzing the results of mock tests allows you to identify your
+                 strengths and weaknesses. Recognizing areas where you struggle
+                  helps you tailor
+                 your study plan to focus on specific topics that need improvement.</dd>
+
+            
+                  <dt class="text-white font-bold text-2xl md:text-2xl">5. Reducing Exam Anxiety: </dt>
+            <dd class="md:w-1/2 md:mx-80">Regularly taking mock tests can help alleviate
+                 exam-related stress and anxiety. Familiarity with
+                  the exam environment and procedures helps build 
+                  confidence, making it easier to manage 
+                nerves and perform well under pressure during the actual exam.</dd>
+        </dl>
+       </div>
+
+         <!--serveral ends here benifits-->
+<!--navbar goes here-->
+
+<div class="w-screen bg-cyan-950 mb-0 md:flex md:justify-around">
+    <div class="mt-5">
+       <img class="h-12"src="logo1.png" alt="">
+        <p>Email us: supportSkills Test.com</p>
+  </div>
+  <div class="">
+      <div class="px-[25%] md:px-0"><h2 class="font-bold text-xl mt-4">Skills Test</h2>
+          <div class="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"></div>
+          <p class="font-serif hover:text-white cursor-pointer text-gray-500">About us</p>
+          <p class="font-serif hover:text-white cursor-pointer text-gray-500">FAQS</p>
+          <p class="font-serif hover:text-white cursor-pointer text-gray-500">privacy policy</p>
+
+      </div>
+  </div>
+  <div class="px-[25%] md:px-0">
+      <div class="items-center"><h2 class="font-bold text-xl mt-4">Skills Test</h2>
+          <div class="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"></div>
+          <p class="font-serif text-gray-500 cursor-pointer hover:text-white">About us</p>
+          <p class="font-serif text-gray-500 cursor-pointer hover:text-white">FAQS</p>
+          <p class="font-serif text-gray-500 cursor-pointer hover:text-white">privacy policy</p>
+
+      </div>
+  </div>
+
+  <div class="px-[25%] mb-10 md:px-0">
+      <div class="items-center"><h2 class="font-bold text-xl mt-4">Skills Test</h2>
+          <div class="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"></div>
+          <p class="font-serif hover:text-white cursor-pointer text-gray-500">About us</p>
+          <p class="font-serif hover:text-white cursor-pointer text-gray-500">FAQS</p>
+          <p class="font-serif hover:text-white cursor-pointer text-gray-500">privacy policy</p>
+
+      </div>
+  </div>
+</div>
+<!--navbar goes here-->
+
+
+
+      
+</body>
+</html>

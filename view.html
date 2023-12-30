@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+    <title>view-answer</title>
+</head>
+<body class="bg-slate-900 grid place-content-center">
+    <nav class="w-full h-14 flex justify-between px-4 md:4 z-10
+    items-center fixed mt-0 bg-gradient-to-r from-cyan-500 to-blue-500 ... border-b-sky-400 border-b-2 md:border-b-4">
+    <div class="flex">
+       <div class="mt-4"> <img class="h-12  " src="logo1.png" alt="">
+       </div><div class="text-2xl my-5 text-indigo-700 font-bold"> Skills Test</div>
+     </div>
+     <ul class="md:flex hidden text-violet-100 font-bold text-2xl">
+      <li onclick="openhome()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">Home</li>
+      <li  onclick="openalltest()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">All Test</li>
+      <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openupcoming()" >admin</li>
+      <li onclick="openresults()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">Results</li>
+      <li onclick="openbuytest()" class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500">Buy test</li>
+  </ul>
+  <div class="flex items-center">
+     <div class="hidden md:block px-2 py-2 h-10 mr-5 bg-indigo-700 
+  text-white rounded font-bold cursor-pointer hover:bg-yellow-500 active:text-yellow-500" onclick="login()" >Login/Signup</div>
+    
+
+  </div>
+  <div class="md:hidden group ">
+      <a class=" text-yellow-500 text-5xl" >&#8801;</a>
+      <ul class=" group-hover:block hidden absolute rounded-md right-1 w-1/3 bg-sky-400 text-violet-100 font-bold text-xl">
+         <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openhome()">Home</li><hr>
+         <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openalltest()">All Test</li><hr>
+         <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openupcoming()">Upcoming</li><hr>
+         <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openresults()">Results</li><hr>
+         <li class="mx-[10px] cursor-pointer hover:text-pink-600 active:text-yellow-500" onclick="openbuytest()">buy test</li><hr>
+       
+     </ul>
+  </div>
+
+</nav>
+   
+    <!--view result start here-->
+   <div class="absolute  mt-14">
+    
+      <!--Question section start here-->
+<div class=" text-white  md:flex justify-between relative border-2">
+    <div class="border-2 border-white relative md:w-6/12 mx-2 my-5  p-2">
+    <div class=" md:mx-2  md:p-2">
+      <div class="font-bold text-center mb-2 flex ">
+      <div class=" bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ... rounded-full w-8/12">1.</div>
+     
+    </div>
+      <p class="text-gray-400 md:w-full">
+        एक समय की बात है, एक छोटे से गाँव में एक गरीब लड़का रहता था जिसका नाम राजू था। वह अपने माता-पिता के साथ रहता था और उनका सपना था कि वह एक दिन बड़ा आदमी बनेगा।
+  
+        राजू का प्रिय समय उसके गाँव की सारी बच्चों के साथ खेतों में खेलना था। एक दिन, एक बुद्धिमान वृद्ध व्यक्ति गाँव में आया और एक बड़े सभागार में एक सुनहरे पत्थर को रखकर चला गया।
+        
+        राजू ने वहां जाकर पूछा, "यह सुनहरा पत्थर क्या है?" वृद्ध व्यक्ति मुस्कराएं और बताएं, "यह एक आशीर्वाद है। इसका उपयोग तुम जैसे विशेष बच्चों के लिए है।"
+        
+        उसने राजू को उस सुनहरे पत्थर को उठाने के लिए कहा और कहा, "तुम इसे जितना दूर ले जा सकते हो, ले जाओ। जितना बड़ा आशीर्वाद होगा, तुम्हारा उतना ही अच्छा भविष्य होगा।"
+        
+        राजू ने उस सुनहरे पत्थर को उठाने का निर्णय किया और वह बहुत दूर तक ले जाने के लिए निकला। रास्ते में उसने कई परीक्षणों का सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था।</p><hr>
+        <img class="hidden" src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_320,h_265,al_br,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png">
+              <div>
+                <div class="mt-5 ml-2">
+                  <input type="radio" id="huey" name="drone" value="huey"/>
+                  <label for="huey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                </div>
+              
+                <div class="mt-5 ml-2">
+                  <input type="radio" id="dewey" name="drone" value="dewey" />
+                  <label for="dewey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                </div>
+              
+                <div class="mt-5 ml-2">
+                  <input type="radio" id="louie" name="drone" value="louie" />
+                  <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                </div>
+                <div class="mt-5 ml-2">
+                  <input type="radio" id="louie" name="drone" value="louie" />
+                  <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                </div>
+                
+              </div>
+              
+</div>
+</div>
+
+        
+
+            <!--hindi quetion-->
+            <div class=" md:mx-2  mx-2 p-2 md:w-6/12 border-2 my-5 md:block hidden">
+                <div class="font-bold text-center mb-2 flex ">
+                    <div class=" bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ... rounded-full w-6/12">1.</div>
+                   
+                  </div>
+                <p class="text-gray-400 md:w-full">
+                  एक समय की बात है, एक छोटे से गाँव में एक गरीब लड़का रहता था जिसका नाम राजू था। वह अपने माता-पिता के साथ रहता था और उनका सपना था कि वह एक दिन बड़ा आदमी बनेगा।
+            
+                  राजू का प्रिय समय उसके गाँव की सारी बच्चों के साथ खेतों में खेलना था। एक दिन, एक बुद्धिमान वृद्ध व्यक्ति गाँव में आया और एक बड़े सभागार में एक सुनहरे पत्थर को रखकर चला गया।
+                  
+                  राजू ने वहां जाकर पूछा, "यह सुनहरा पत्थर क्या है?" वृद्ध व्यक्ति मुस्कराएं और बताएं, "यह एक आशीर्वाद है। इसका उपयोग तुम जैसे विशेष बच्चों के लिए है।"
+                  
+                  उसने राजू को उस सुनहरे पत्थर को उठाने के लिए कहा और कहा, "तुम इसे जितना दूर ले जा सकते हो, ले जाओ। जितना बड़ा आशीर्वाद होगा, तुम्हारा उतना ही अच्छा भविष्य होगा।"
+                  
+                  राजू ने उस सुनहरे पत्थर को उठाने का निर्णय किया और वह बहुत दूर तक ले जाने के लिए निकला। रास्ते में उसने कई परीक्षणों का सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था।</p><hr>
+                  <img class="hidden" src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_320,h_265,al_br,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png">
+                        <div>
+                          <div class="mt-5 ml-2">
+                            <input type="radio" id="huey" name="drone" value="huey"/>
+                            <label for="huey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                          </div>
+                        
+                          <div class="mt-5 ml-2">
+                            <input type="radio" id="dewey" name="drone" value="dewey" />
+                            <label for="dewey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                          </div>
+                        
+                          <div class="mt-5 ml-2">
+                            <input type="radio" id="louie" name="drone" value="louie" />
+                            <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                          </div>
+                          <div class="mt-5 ml-2">
+                            <input type="radio" id="louie" name="drone" value="louie" />
+                            <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                          </div>
+                          
+                        </div>
+                       
+                        
+                    </div>
+                    
+                 
+                    </div>
+                    <div class="mt-5 ml-2 text-center text-xl text-pink-500 font-semibold ">
+                      <input type="radio" id="louie" name="drone" value="louie" checked />
+                      <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                    </div>
+
+<!--question 2. start here-->
+
+     <!--Question section start here-->
+<div class=" text-white  md:flex justify-between relative border-2">
+  <div class="border-2 border-white relative md:w-6/12 mx-2 my-5  p-2">
+  <div class=" md:mx-2  md:p-2">
+    <div class="font-bold text-center mb-2 flex ">
+    <div class=" bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ... rounded-full w-8/12">1.</div>
+   
+  </div>
+    <p class="text-gray-400 md:w-full">
+      एक समय की बात है, एक छोटे से गाँव में एक गरीब लड़का रहता था जिसका नाम राजू था। वह अपने माता-पिता के साथ रहता था और उनका सपना था कि वह एक दिन बड़ा आदमी बनेगा।
+
+      राजू का प्रिय समय उसके गाँव की सारी बच्चों के साथ खेतों में खेलना था। एक दिन, एक बुद्धिमान वृद्ध व्यक्ति गाँव में आया और एक बड़े सभागार में एक सुनहरे पत्थर को रखकर चला गया।
+      
+      राजू ने वहां जाकर पूछा, "यह सुनहरा पत्थर क्या है?" वृद्ध व्यक्ति मुस्कराएं और बताएं, "यह एक आशीर्वाद है। इसका उपयोग तुम जैसे विशेष बच्चों के लिए है।"
+      
+      उसने राजू को उस सुनहरे पत्थर को उठाने के लिए कहा और कहा, "तुम इसे जितना दूर ले जा सकते हो, ले जाओ। जितना बड़ा आशीर्वाद होगा, तुम्हारा उतना ही अच्छा भविष्य होगा।"
+      
+      राजू ने उस सुनहरे पत्थर को उठाने का निर्णय किया और वह बहुत दूर तक ले जाने के लिए निकला। रास्ते में उसने कई परीक्षणों का सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था।</p><hr>
+      <img class="hidden" src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_320,h_265,al_br,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png">
+            <div>
+              <div class="mt-5 ml-2">
+                <input type="radio" id="huey" name="drone" value="huey"/>
+                <label for="huey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+              </div>
+            
+              <div class="mt-5 ml-2">
+                <input type="radio" id="dewey" name="drone" value="dewey" />
+                <label for="dewey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+              </div>
+            
+              <div class="mt-5 ml-2">
+                <input type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+              </div>
+              <div class="mt-5 ml-2">
+                <input type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+              </div>
+              
+            </div>
+            
+</div>
+</div>
+
+      
+
+          <!--hindi quetion-->
+          <div class=" md:mx-2  mx-2 p-2 md:w-6/12 border-2 my-5 md:block hidden">
+              <div class="font-bold text-center mb-2 flex ">
+                  <div class=" bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ... rounded-full w-6/12">1.</div>
+                 
+                </div>
+              <p class="text-gray-400 md:w-full">
+                एक समय की बात है, एक छोटे से गाँव में एक गरीब लड़का रहता था जिसका नाम राजू था। वह अपने माता-पिता के साथ रहता था और उनका सपना था कि वह एक दिन बड़ा आदमी बनेगा।
+          
+                राजू का प्रिय समय उसके गाँव की सारी बच्चों के साथ खेतों में खेलना था। एक दिन, एक बुद्धिमान वृद्ध व्यक्ति गाँव में आया और एक बड़े सभागार में एक सुनहरे पत्थर को रखकर चला गया।
+                
+                राजू ने वहां जाकर पूछा, "यह सुनहरा पत्थर क्या है?" वृद्ध व्यक्ति मुस्कराएं और बताएं, "यह एक आशीर्वाद है। इसका उपयोग तुम जैसे विशेष बच्चों के लिए है।"
+                
+                उसने राजू को उस सुनहरे पत्थर को उठाने के लिए कहा और कहा, "तुम इसे जितना दूर ले जा सकते हो, ले जाओ। जितना बड़ा आशीर्वाद होगा, तुम्हारा उतना ही अच्छा भविष्य होगा।"
+                
+                राजू ने उस सुनहरे पत्थर को उठाने का निर्णय किया और वह बहुत दूर तक ले जाने के लिए निकला। रास्ते में उसने कई परीक्षणों का सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था।</p><hr>
+                <img class="hidden" src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_320,h_265,al_br,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png">
+                      <div>
+                        <div class="mt-5 ml-2">
+                          <input type="radio" id="huey" name="drone" value="huey"/>
+                          <label for="huey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                        </div>
+                      
+                        <div class="mt-5 ml-2">
+                          <input type="radio" id="dewey" name="drone" value="dewey" />
+                          <label for="dewey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                        </div>
+                      
+                        <div class="mt-5 ml-2">
+                          <input type="radio" id="louie" name="drone" value="louie" />
+                          <label for="louie"> किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                        </div>
+                        <div class="mt-5 ml-2">
+                          <input type="radio" id="louie" name="drone" value="louie" />
+                          <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                        </div>
+                        
+                      </div>
+                     
+                      
+                  </div>
+                  
+               
+                  </div>
+                  <div class="mt-5 ml-2 text-center text-xl text-pink-500 font-semibold ">
+                    <input type="radio" id="louie" name="drone" value="louie" checked />
+                    <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                  </div>
+<!--question 3. start here-->
+
+     <!--Question section start here-->
+     <div class=" text-white  md:flex justify-between relative border-2">
+      <div class="border-2 border-white relative md:w-6/12 mx-2 my-5  p-2">
+      <div class=" md:mx-2  md:p-2">
+        <div class="font-bold text-center mb-2 flex ">
+        <div class=" bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ... rounded-full w-8/12">1.</div>
+       
+      </div>
+        <p class="text-gray-400 md:w-full">
+          एक समय की बात है, एक छोटे से गाँव में एक गरीब लड़का रहता था जिसका नाम राजू था। वह अपने माता-पिता के साथ रहता था और उनका सपना था कि वह एक दिन बड़ा आदमी बनेगा।
+    
+          राजू का प्रिय समय उसके गाँव की सारी बच्चों के साथ खेतों में खेलना था। एक दिन, एक बुद्धिमान वृद्ध व्यक्ति गाँव में आया और एक बड़े सभागार में एक सुनहरे पत्थर को रखकर चला गया।
+          
+          राजू ने वहां जाकर पूछा, "यह सुनहरा पत्थर क्या है?" वृद्ध व्यक्ति मुस्कराएं और बताएं, "यह एक आशीर्वाद है। इसका उपयोग तुम जैसे विशेष बच्चों के लिए है।"
+          
+          उसने राजू को उस सुनहरे पत्थर को उठाने के लिए कहा और कहा, "तुम इसे जितना दूर ले जा सकते हो, ले जाओ। जितना बड़ा आशीर्वाद होगा, तुम्हारा उतना ही अच्छा भविष्य होगा।"
+          
+          राजू ने उस सुनहरे पत्थर को उठाने का निर्णय किया और वह बहुत दूर तक ले जाने के लिए निकला। रास्ते में उसने कई परीक्षणों का सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था।</p><hr>
+          <img class="hidden" src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_320,h_265,al_br,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png">
+                <div>
+                  <div class="mt-5 ml-2">
+                    <input type="radio" id="huey" name="drone" value="huey"/>
+                    <label for="huey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                  </div>
+                
+                  <div class="mt-5 ml-2">
+                    <input type="radio" id="dewey" name="drone" value="dewey" />
+                    <label for="dewey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                  </div>
+                
+                  <div class="mt-5 ml-2">
+                    <input type="radio" id="louie" name="drone" value="louie" />
+                    <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                  </div>
+                  <div class="mt-5 ml-2">
+                    <input type="radio" id="louie" name="drone" value="louie" />
+                    <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                  </div>
+                  
+                </div>
+                
+    </div>
+    </div>
+    
+          
+    
+              <!--hindi quetion-->
+              <div class=" md:mx-2  mx-2 p-2 md:w-6/12 border-2 my-5 md:block hidden">
+                  <div class="font-bold text-center mb-2 flex ">
+                      <div class=" bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 ... rounded-full w-6/12">1.</div>
+                     
+                    </div>
+                  <p class="text-gray-400 md:w-full">
+                    एक समय की बात है, एक छोटे से गाँव में एक गरीब लड़का रहता था जिसका नाम राजू था। वह अपने माता-पिता के साथ रहता था और उनका सपना था कि वह एक दिन बड़ा आदमी बनेगा।
+              
+                    राजू का प्रिय समय उसके गाँव की सारी बच्चों के साथ खेतों में खेलना था। एक दिन, एक बुद्धिमान वृद्ध व्यक्ति गाँव में आया और एक बड़े सभागार में एक सुनहरे पत्थर को रखकर चला गया।
+                    
+                    राजू ने वहां जाकर पूछा, "यह सुनहरा पत्थर क्या है?" वृद्ध व्यक्ति मुस्कराएं और बताएं, "यह एक आशीर्वाद है। इसका उपयोग तुम जैसे विशेष बच्चों के लिए है।"
+                    
+                    उसने राजू को उस सुनहरे पत्थर को उठाने के लिए कहा और कहा, "तुम इसे जितना दूर ले जा सकते हो, ले जाओ। जितना बड़ा आशीर्वाद होगा, तुम्हारा उतना ही अच्छा भविष्य होगा।"
+                    
+                    राजू ने उस सुनहरे पत्थर को उठाने का निर्णय किया और वह बहुत दूर तक ले जाने के लिए निकला। रास्ते में उसने कई परीक्षणों का सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था।</p><hr>
+                    <img class="hidden" src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_320,h_265,al_br,q_85,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png">
+                          <div>
+                            <div class="mt-5 ml-2">
+                              <input type="radio" id="huey" name="drone" value="huey"/>
+                              <label for="huey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                            </div>
+                          
+                            <div class="mt-5 ml-2">
+                              <input type="radio" id="dewey" name="drone" value="dewey" />
+                              <label for="dewey">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                            </div>
+                          
+                            <div class="mt-5 ml-2">
+                              <input type="radio" id="louie" name="drone" value="louie" />
+                              <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                            </div>
+                            <div class="mt-5 ml-2">
+                              <input type="radio" id="louie" name="drone" value="louie" />
+                              <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                            </div>
+                            
+                          </div>
+                         
+                          
+                      </div>
+                      
+                   
+                      </div>
+                      <div class="mt-5 ml-2 text-center text-xl text-pink-500 font-semibold ">
+                        <input type="radio" id="louie" name="drone" value="louie" checked />
+                        <label for="louie">सामना किया, लेकिन वह हमेशा हौंसला बनाए रखता था</label>
+                      </div>
+      <!--view result start here-->
+     <!--view result start here-->
+    </div>
+                 </div>
+                 <button class="bg-cyan-600 text-xl font-semibold text-white hover:bg-pink-500 my-10 mx-8 rounded-b-lg h-10">SAVE RESULT</button>
+                  </div>
+               
+</body>
+</html>
